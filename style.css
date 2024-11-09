@@ -1,0 +1,91 @@
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+/* PADRONIZAÇÃO DE CÓDIGO */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+body {
+    border: solid rgba(0, 0, 0, 0.58) 05px;
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    height: 110vh;
+    box-sizing: border-box;
+    background-image: radial-gradient(rgba(238, 228, 42, 0.5), rgba(148, 229, 245, 0.5));
+    background-size: 90%;
+    
+    color: #9151DB;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px; /*Espaçamento entre os itens filhos*/
+
+}
+
+.imagem {
+    margin-left: 35%;
+    margin-bottom: 5%;
+    height: 200px;
+    width: 200px;
+    filter: sepia(50%);
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.imagem:hover {
+    transition: transform 0.3s ease; /* Suaviza a transformação */
+    transform: scale(1.2); /* Aumenta a imagem em 20% ao passar o mouse */
+}
+
+.meio{
+    padding: 20px;
+    height: 200px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.meio_main {
+    font-size: 25px;
+}
+
+.titulo {
+    color: black;
+}
+.destaque {
+    color: #b35f67; 
+    font-weight: bold;
+}
+
+footer {
+    width: 700px;
+    padding: 30px 10px 10px 50px;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    text-decoration: none;/* Remove qualquer decoração padrão. ex, tirar o sublinhado*/
+    color: black; /* Cor do texto */
+    padding: 10px 0px; /* O primeiro valor é para o eixo vertical e o segundo para o eixo horixontal  */
+    background-color: #9151DB; /*Cor de fundo*/
+    width: 150px; /* Largura */ 
+    text-align: center; /* Alinha o texto no centro */
+    border-radius: 16px; /* Arredona o botão*/
+    box-shadow: #101010;
+}
